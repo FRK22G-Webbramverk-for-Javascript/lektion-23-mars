@@ -5,4 +5,11 @@ function increase(value) {
     }
 }
 
-export { increase }
+function decrease(value) {
+    return {
+        type: 'DECREASE',
+        payload: value
+    }
+}
+
+export { increase, decrease }
